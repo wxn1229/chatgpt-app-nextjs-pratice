@@ -16,7 +16,7 @@ export default function ChatInput() {
             <PiLightningFill></PiLightningFill>
           </div>
           <TextareaAutoSize
-            className="flex-1 max-h-64 mb-1.5 bg-transparent text-black dark:text-white"
+            className="resize-none outline-none flex-1 max-h-64 mb-1.5 bg-transparent text-black dark:text-white"
             placeholder="輸入一條訊息..."
             rows={1}
           ></TextareaAutoSize>
@@ -26,6 +26,17 @@ export default function ChatInput() {
             variant="primary"
           ></Button>
         </div>
+        <footer className="text-center text-sm text-gray-700 dark:text-gray-300 px-4 pb-6">
+          &copy;{new Date().getFullYear()}&nbsp; {""}
+          <a
+            href="http://x.zhixing.co"
+            target="_blank"
+            className="font-medium py-[1px] border-b border-dotted border-black/60 hover:border-black/0 dark:border-gray-200 dark:hover:border-gray-200/0 animated-underline"
+          >
+            知行小課
+          </a>
+          .&nbsp;基於第三方提供的API
+        </footer>
       </div>
     </div>
   );
